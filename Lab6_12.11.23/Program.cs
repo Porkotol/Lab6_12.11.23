@@ -1,9 +1,9 @@
 ﻿class Flower
 {
     public static int pelcount = 7;
-    public delegate void PetalEventHandler();
-    public static event PetalEventHandler Event1;
-    public static event PetalEventHandler Event2;
+    public delegate void EventHandler();
+    public static event EventHandler Event1;
+    public static event EventHandler Event2;
 
     public static void GenEvents()
     {
