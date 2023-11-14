@@ -21,7 +21,7 @@
 
 class Girl
 {
-    private string[] list  = { "Хочу з тобою гратися", "Хочу з тобою бiгати", "Хочу з тобою пригати", "Хочу з тобою кататися на велосипедi", "Хочу з тобою плавати", "Хочу з тобою гуляти" };
+    string[] list  = { "Хочу з тобою гратися", "Хочу з тобою бiгати", "Хочу з тобою пригати", "Хочу з тобою кататися на велосипедi", "Хочу з тобою плавати", "Хочу з тобою гуляти" };
     public void Event1()
     {
         Console.ForegroundColor = ConsoleColor.Blue;
@@ -52,12 +52,10 @@ class Boy
 
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        Flower flower = new Flower();
         Girl girl = new Girl();
         Boy boy = new Boy();
-
         Flower.Event1 += girl.Event1;
         Flower.Event2 += girl.Event2;
         Flower.Event1 += boy.Event1;
